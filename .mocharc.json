@@ -1,0 +1,8 @@
+{
+  "node-option": ["import=tsx"],
+  "require": [
+    "./src/testing/loadEnv.ts",
+    "./src/testing/globalSetup.ts",
+    "./src/testing/globalTeardown.ts"
+  ]
+}

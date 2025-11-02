@@ -1,0 +1,47 @@
+{
+  "name": "@supercake/backend-coding-challenge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch -r dotenv/config src/index.ts",
+    "start": "tsx src/index.ts",
+    "start:queue-worker": "tsx src/queueWorker/index.ts",
+    "test": "NODE_ENV=test mocha 'src/**/*.test.ts'",
+    "format": "prettier --write .",
+    "format:check": "prettier . --check",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint",
+    "checks": "npm run lint && npm run typecheck && npm run format:check"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
+    "@types/body-parser": "^1.19.6",
+    "@types/mocha": "^10.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^22.10.1",
+    "@types/pg": "^8.15.6",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "eslint": "^9.15.0",
+    "expect": "^29.7.0",
+    "mocha": "^11.0.1",
+    "prettier": "3.4.1",
+    "supertest": "^7.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
